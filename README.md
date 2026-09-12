@@ -1145,6 +1145,13 @@ This approach scales better than human evaluation and provides consistent, autom
     observability. Captures full execution traces, runs automated evaluations
     against built-in and custom metrics, and surfaces production dashboards
     for cost, latency, and quality — all in a single self-hostable service.
+- [OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay)
+  - Records a RAG or agent run at the model-provider HTTP boundary from outside
+    the process — verbatim requests and responses, tool calls, and file changes
+    — then serves the recording back so the same run executes again with no
+    provider called. Where the tools above give you a trace to read, this gives
+    you one you can re-run: a production failure becomes a fixture a colleague
+    can reproduce with no API key. Nothing is imported into your app. Apache-2.0.
 
 ## Deployment & Serving
 
